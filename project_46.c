@@ -28,7 +28,7 @@ int main()
         {
             printf("*");
         }
-        printf("\n"); // Moves to the next line after printing 5 stars
+        printf("\n"); 
     }
     return 0;
 }
