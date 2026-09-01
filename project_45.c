@@ -23,23 +23,23 @@ int main() {
     double numerator = 2.0;
     double denominator = 3.0;
 
-    // Prompt user for input
+    
     printf("Enter the number of terms (n): ");
     if (scanf("%d", &n) != 1 || n <= 0) {
         printf("Please enter a valid positive integer.\n");
         return 1;
     }
 
-    // Loop through n terms to compute the sum
+    
     for (int i = 0; i < n; i++) {
         sum += numerator / denominator;
         
-        // Update terms for the next iteration
-        numerator += 2.0;       // Numerator increments by 2 (2, 4, 6, 8...)
-        denominator += 4.0;     // Denominator increments by 4 (3, 7, 11, 15...)
+        
+        numerator += 2.0;       
+        denominator += 4.0;     
     }
 
-    // Display the final result matching the approximate format
+    
     printf("Approximate sum: %.2f\n", sum);
 
     return 0;
